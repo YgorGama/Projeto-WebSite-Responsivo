@@ -1,0 +1,203 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+}
+
+.container-max-width{
+    max-width: 1024px;
+    margin: 0 auto  ;
+}
+
+main{
+    margin-bottom: 60px;
+    color: #0000008c;
+}
+
+.container-content{
+    text-align: center;
+    max-width: 600px;
+    margin:0 auto;
+}
+
+.container-content h2, .container-content h3, .container-content p{
+    padding: 10px;
+}
+
+.logo-top, .img-logo-footer{
+    height: 60px;
+}
+
+#especiality, #about, #contact{
+    padding: 40px 20px 0;
+}
+/*Header Part*/
+
+header{
+    background-color:#00CED1;
+    width: 100%;
+}
+
+.container-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    min-width: 60px;
+    padding: 0 10px;
+}
+
+.container-top a{
+    color: #fff;
+}
+
+.name-clinic a{
+    display: flex;
+}
+
+.link-top-nav{
+   display: flex;
+}
+
+.link-top{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link-top:hover{
+    color: #696969;
+}
+
+/*footer*/
+
+footer{
+    background-color: #008080;
+    color: #fff;
+}
+
+.footer-container{
+    text-align: center;
+    padding: 20px;
+}
+
+.information-footer{
+    padding: 10px;
+}
+/*Main Fist-Part*/
+
+.title-page{
+    background-image: url('../img/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    color: #fff;
+    align-items: center;
+}
+
+.title-page h1{
+    font-size: 38px;
+    font-weight: 500;
+}
+/* List */
+.container-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.config-titles-text h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin:10px 0 10px 0;
+    font-size: 18px;
+}
+
+.container-list .img-list{
+    height: 250px;
+}
+
+/*Part Especiality*/
+
+.container-img-especiality{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagem-especiality{
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    width: calc(100% / 3 - 40px);
+    border-radius: 3px;
+    margin: 20px;
+}
+.container-img-especiality img{
+    width:100%
+}
+
+.imagem-especiality figcaption{
+    text-align: center;
+    padding: 10px;
+}
+
+.box-link-horario{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box-link-horario a {
+    color: #fff;
+    background-color: #008080;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+/*Media Querry Main*/
+
+@media (max-width:425px){
+    .title-page{height: 200px;}
+    .title-page h1{font-size: 28px;}
+    .img-list{display: none;}
+    .imagem-especiality{width:100%}
+}
+
+@media (max-width:768px){
+    .title-page{height: 300px;}
+    .title-page h1{font-size: 28px;}
+    .img-list{display: none;}
+    .imagem-especiality{width: calc(100% /2 - 40px)}
+}
+
+@media (max-width:1024px){
+    .title-page{height: 400px;}
+}
+
+@media (min-width:1025px){
+    .title-page{height: 700px; max-width:100% ;}
+    .imagem-especiality{width: calc(100% /3 - 40px)}
+    .title-page h1{font-size:xx-large;}
+}
+@media (max-width:375px){
+    .title-page{height: 200px;}
+    .title-page h1{font-size: 28px;}
+    .img-list{display: none;}
+    .imagem-especiality{width:100%}
+}
+/* Media Querry Header (only 425px)*/   
+
+@media (max-width:425px){
+    .container-top{flex-direction: column;}
+    .link-top{border-top: 1px solid #3d3d3d;justify-content: space-around; width: 100%;}
+    .name-clinic{margin: 10 0px;}
+}
+

@@ -1,0 +1,83 @@
+/*Links Main Page*/
+
+.container-links-main-page{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.links-main-page{
+    padding: 20px;
+}
+
+.link-main{
+    margin-left: 10px;
+    border-bottom: 3px solid #00CED1;
+    border-radius: 3px;
+    color: #3d3d3d;
+    font-size: 18px
+}
+.link-main:hover{
+    color:#0d6e71;
+}
+
+/*Table*/
+
+.container-table{
+    display: flex;
+    padding: 0 20px;
+    height: 240px;
+    justify-content: center;
+}
+
+.container-table img{ 
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.table-espiciality{
+    height: 100%;
+    width: 70%;
+    text-align: left;
+    border-spacing: 0;
+}
+
+.table-espiciality th{
+    background-color:#00CED1;
+    color: #fff;
+}
+
+.table-espiciality tr{
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+}
+
+.table-espiciality tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+}
+
+.table-espiciality th, .table-espiciality td{
+      padding: 10px;
+}
+
+@media (max-width:768px){
+    .container-table img{
+        display: none;
+    }
+    .table-espiciality{
+        width: 100%;
+    }
+    .container-table{
+        height: auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width:475px){
+    .container-table{
+        padding: 0;
+    }
+}
+
